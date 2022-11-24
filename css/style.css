@@ -85,15 +85,41 @@ header{
     display: flex;
     list-style: none;
 }
-.menu ul li a{
+
+.link {
+    position: relative;
     margin-right: 50px;
     font-size: 18px;
+    padding: 6px 0px;
     color: var(--secondary);
 }
-.menu ul li a:hover{
-    color: var(--btn);
-    letter-spacing: 0.1rem;
+.link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 0%;
+    height: 2px;
+    background: #f7f7f7;
+   transition: all .4s ease-in-out;
 }
+  
+.link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 90%;
+    width: 0%;
+    height: 2px;
+    background: #f7f7f7;
+    transition: all .4s ease-in-out;
+}
+.link:hover::before, .link:hover::after {
+    color: var(--btn);
+    width: 100%;
+    left: 0;
+}
+
 
 /* main */
 main{
