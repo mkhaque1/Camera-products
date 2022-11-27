@@ -180,7 +180,7 @@ input:checked + .slider:before {
     color: var(--secondary);
 }
 /*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
+@media (min-width: 320px) and (max-width: 425px)  {
     .right-col h1 {
         font-size: 18px;
         margin-bottom: 10px;
@@ -194,5 +194,8 @@ input:checked + .slider:before {
 
    form{
     width: auto;
+   }
+   .footer{
+    display: none;
    }
 }
