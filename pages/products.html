@@ -5,25 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/products.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/51b7a6e7c5.js" crossorigin="anonymous"></script>
     <title>Products</title>
 </head>
     <body>
         <header>
             <div class="container">
-                <nav class="navbar">
-                    <div class="logo">
-                        <a href="../index.html"><h1>Logo</h1></a>
-                    </div>
-                    <div class="menu">
-                        <ul>
-                            <li><a class="link" href="../index.html">About</a></li>
-                            <li><a class="link" href="#product">Product</a></li>
-                            <li><a class="link" href="./contact.html" target="_blank">Contact</a></li>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <a class="logo" href="index.html">C-Logo</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active link" aria-current="page" href="../index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link link" href="products.html">Products</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link link" href="../pages/contact.html">Contact</a>
+                          </li>
                         </ul>
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-primary" type="submit">Search</button>
+                        </form>
+                      </div>
                     </div>
-                </nav>
+                  </nav>
             </div>
         </header>
 <!--products-->
@@ -321,6 +334,6 @@
     </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

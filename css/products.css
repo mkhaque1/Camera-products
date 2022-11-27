@@ -1,15 +1,15 @@
  @import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
-
+@import url('../css/style.css');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-transform: capitalize;
     text-decoration: none !important;
-    transition: all 0.4s ease;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;;
+    transition: all 0.4s ease !important;
+    -webkit-transition: all 0.4s ease !important;
+    -moz-transition: all 0.4s ease !important;
 }
 html{
     scroll-behavior: smooth;
@@ -57,68 +57,6 @@ body{
 }
 .btn:hover:before{
     transform: scaleX(1);
-}
-/* Header */
-
-.container{
-    width: 80%;
-    margin: 0 auto;
-}
-header{
-    padding: 20px 0px;
-    background-color: var(--primary);
-}
-.navbar{
-    color: var(--secondary);
-    display: flex;
-    justify-content: space-between;
-}
-.navbar .logo{
-    font-size: 24px;
-}
-.logo h1{
-    color: var(--secondary);
- }
-.menu{
-    display: flex;
-    align-items: center;
-}
-.menu ul {
-    display: flex;
-    list-style: none;
-}
-.link {
-    position: relative;
-    margin-right: 50px;
-    font-size: 18px;
-    padding: 6px 0px;
-    color: var(--secondary);
-}
-.link::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 10%;
-    width: 0%;
-    height: 2px;
-    background: #f7f7f7;
-   transition: all .4s ease-in-out;
-}
-  
-.link::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 90%;
-    width: 0%;
-    height: 2px;
-    background: #f7f7f7;
-    transition: all .4s ease-in-out;
-}
-.link:hover::before, .link:hover::after {
-    
-    width: 100%;
-    left: 0;
 }
 
 /* products 1 */
