@@ -174,7 +174,7 @@ main{
 	left: 50%;
 	transform: translate(-50%, -50%) rotateY(90deg);
 	transform-origin: 50%;
-	background: rgba(202, 200, 200, 0.901);	
+	background: rgba(94, 154, 186, 0.95);	
     color: var(--primary);
 	opacity: 0;
 	transition: all 0.4s ease-in;
