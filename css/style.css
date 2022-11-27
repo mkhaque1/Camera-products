@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
-
 *{
     padding: 0;
     margin: 0;
@@ -63,7 +62,7 @@ body{
     margin: 0 auto;
 }
 header{
-    padding: 20px 0px;
+    padding: 10px 0px;
     background-color: var(--primary);
 }
 .navbar{
@@ -72,10 +71,11 @@ header{
     justify-content: space-between;
 }
 .navbar .logo{
-    font-size: 24px;
+
 }
 .logo{
-   color: var(--secondary);
+    background-color:rgba(238, 243, 245, 0.95) !important;
+    width: 6%;
 }
 .menu{
     display: flex;
