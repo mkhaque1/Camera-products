@@ -285,7 +285,7 @@ main{
 }
 /* footer */
 .footer{
-    padding: 50px 0px;
+    padding: 30px 0px;
     background-color: var(--primary);
 }
 .f_text a, p{
