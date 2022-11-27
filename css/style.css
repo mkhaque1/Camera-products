@@ -5,9 +5,9 @@
     margin: 0;
     box-sizing: border-box;
     text-transform: capitalize;
-    text-decoration: none;
-    transition: all 0.4s ease;
-    -webkit-transition: all 0.4s ease;
+    text-decoration: none !important;
+    transition: all 0.4s ease !important;
+    -webkit-transition: all 0.4s ease !important;
 }
 html{
     scroll-behavior: smooth;
@@ -23,7 +23,7 @@ body{
     font-size: 16px;
    
 }
-.btn{
+.btn1{
     background-color: var(--btn);
     border: none;
     border: 2px solid var(--btn);
@@ -34,10 +34,10 @@ body{
     cursor: pointer;
     position: relative;
 }
-.btn:hover{
+.btn1:hover{
     color: white;
 }
-.btn::before{
+.btn1::before{
     content: "";
     position: absolute;
     top: 0;
@@ -50,10 +50,10 @@ body{
     transform-origin: 0 0;
     transition-timing-function: cubic-bezier();
 }
-.btn::before{
+.btn1::before{
     transform: scaleX(0);
 }
-.btn:hover:before{
+.btn1:hover:before{
     transform: scaleX(1);
 }
 /* Header */
@@ -74,7 +74,7 @@ header{
 .navbar .logo{
     font-size: 24px;
 }
-.logo h1{
+.logo{
    color: var(--secondary);
 }
 .menu{
@@ -90,8 +90,8 @@ header{
     position: relative;
     margin-right: 50px;
     font-size: 18px;
-    padding: 6px 0px;
-    color: var(--secondary);
+    padding: 4px 0px !important;
+    color: var(--secondary) !important;
 }
 .link::before {
     content: "";
@@ -174,7 +174,7 @@ main{
 	left: 50%;
 	transform: translate(-50%, -50%) rotateY(90deg);
 	transform-origin: 50%;
-	background: rgba(94, 154, 186, 0.95);	
+	background: rgba(93, 98, 100, 0.95);	
     color: var(--primary);
 	opacity: 0;
 	transition: all 0.4s ease-in;
@@ -192,14 +192,14 @@ main{
 .Product_title{
     text-align: center;
     font-size: 36px;
+    font-weight: bold;
     color: var(--primary);
+    padding-bottom: 50px;
 }
 .item{
     padding: 35px 0px;
-    display: flex;
 }
 .content{
-    width: 60%;
     border: none;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -225,6 +225,18 @@ main{
 }
 .text{
     color: var(--primary);
+}
+.text h1{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+.text_btm{
+    text-align: left;
+}
+.text_btm ul li:hover{
+    transform: translateX(20px);
+    color: #3882f6;
 }
 /* queto */
 .testimonial{
@@ -273,10 +285,11 @@ main{
 }
 .news_text h3{
     color: var(--secondary);
-    font-size: 22px;
+    font-size: 26px;
     margin-bottom: 10px;
 }
 .news_text h4{
+    font-size: 18px;
     color: rgba(229, 231, 235, 0.51);
     font-weight: 300;
 }

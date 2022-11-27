@@ -5,24 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/media.css">
     <script src="https://kit.fontawesome.com/51b7a6e7c5.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="index.html"><h1>logo</h1></a>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a class="link" href="#">About</a></li>
-                        <li><a class="link" href="./pages/products.html">Product</a></li>
-                        <li><a class="link" href="./pages/contact.html" target="_blank">Contact</a></li>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <a class="logo" href="index.html">C-Logo</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link link" href="./pages/products.html">Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link link" href="./pages/contact.html">Contact</a>
+                      </li>
                     </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                  </div>
                 </div>
-            </nav>
+              </nav>
         </div>
     </header>
     <main>
@@ -31,7 +46,7 @@
                 <div class="hero_left">
                     <h1>Delivering Mobile Communication Solutions</h1>
                     <p>Oceans Edge is a global provider of mobile communications solutions for government and commercial organizations</p>
-                    <button class="btn">Sign up</button>
+                    <button class="btn1">Sign up</button>
                 </div>
                 <div class="hero_right">
                     <figure>
@@ -45,7 +60,7 @@
                             Check out our new camera model and enjoy the best features in any low budget model ever.
                             </p>    
                             <p>Purchase a promotional product to claim up to £ 270 cashback. Or, for additional savings, purchase an eligible RF lenses with an eligible EOS R-system camera.</p>
-                            <button class="btn m_btn">Learn more</button>
+                            <button class="btn1 m_btn">Learn more</button>
                         </div>
                     </figcaption>
                 </div>
@@ -54,38 +69,51 @@
     </main>
     <section class="product" id="product">
         <div class="container">
-            <h1 class="Product_title">cheek our new arrival products</h1>
-            <div class="item">
+           <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-6">
+                <h1 class="Product_title">cheek our new arrival products</h1>
+            </div>
+           </div>
+           <div class="row">
+            <div class="col-lg-4 col-md-6 col-xl-3">
                 <div class="content">
                     <figure>
-                        <img  src="images/c-1.png" alt="item camera">
+                        <img class="img-fluid" src="images/c-1.png" alt="item camera">
                     </figure>
                     <figcaption>
                         <div class="text">
                             <h1>Sale up to 70%</h1>
-                            <ul>
-                                <li>Sports, wildlife</li>
-                                <li>Professional L-series</li>
-                                <li>Dual Nano USM, 5-stop IS, Super UD lens</li>
-                            </ul>
+                            <div class="text_btm m-0">
+                                <ul>
+                                    <li>Sports, wildlife</li>
+                                    <li>Professional L-series</li>
+                                    <li>Dual Nano USM, 5-stop IS, Super UD lens</li>
+                                </ul>
+                            </div>
                         </div>
                     </figcaption>
                 </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xl-3">
                 <div class="content">
                     <figure>
-                        <img  src="images/c-2.png" alt="item camera">
+                        <img class="img-fluid" src="images/c-2.png" alt="item camera">
                     </figure>
                     <figcaption>
                         <div class="text">
                             <h1>Sale up to 70%</h1>
-                            <ul>
-                                <li>Sports, wildlife</li>
-                                <li>Professional L-series</li>
-                                <li>Dual Nano USM, 5-stop IS, Super UD lens</li>
-                            </ul>
+                            <div class="text_btm m-0 p-0">
+                                <ul>
+                                    <li>Sports, wildlife</li>
+                                    <li>Professional L-series</li>
+                                    <li>Dual Nano USM, 5-stop IS, Super UD lens</li>
+                                </ul>
+                            </div>
                         </div>
                     </figcaption>
                 </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xl-3">
                 <div class="content">
                     <figure>
                         <img  src="images/c-3.png" alt="item camera">
@@ -93,30 +121,37 @@
                     <figcaption>
                         <div class="text">
                             <h1>Sale up to 70%</h1>
-                            <ul>
-                                <li>Sports, wildlife</li>
-                                <li>Professional L-series</li>
-                                <li>Dual Nano USM, 5-stop IS, Super UD lens</li>
-                            </ul>
-                        </div>
-                    </figcaption>
-                </div>
-                <div class="content">
-                    <figure>
-                        <img src="images/c-2.png" alt="item camera">
-                    </figure>
-                    <figcaption>
-                        <div class="text">
-                            <h1>Sale up to 70%</h1>
-                            <ul>
-                                <li>Sports, wildlife</li>
-                                <li>Professional L-series</li>
-                                <li>Dual Nano USM, 5-stop IS, Super UD lens</li>
-                            </ul>
+                            <div class="text_btm m-0">
+                                <ul>
+                                    <li>Sports, wildlife</li>
+                                    <li>Professional L-series</li>
+                                    <li>Dual Nano USM, 5-stop IS, Super UD lens</li>
+                                </ul>
+                            </div>
                         </div>
                     </figcaption>
                 </div>
             </div>
+           <div class="col-lg-4 col-md-6 col-xl-3">
+            <div class="content">
+                <figure>
+                    <img src="images/c-2.png" alt="item camera">
+                </figure>
+                <figcaption>
+                    <div class="text">
+                        <h1>Sale up to 70%</h1>
+                        <div class="text_btm m-0">
+                            <ul>
+                                <li>Sports, wildlife</li>
+                                <li>Professional L-series</li>
+                                <li>Dual Nano USM, 5-stop IS, Super UD lens</li>
+                            </ul>
+                        </div>
+                    </div>
+                </figcaption>
+            </div>
+           </div>
+           </div>
         </div>
     </section>
     <section class="testimonial">
@@ -145,7 +180,7 @@
                     <h3>Need more information for the discount?</h3>
                     <h4>Sing up for our products by clicking singup button right over there!</h4>
                 </div>
-                <button class="btn n_btn">Sing up</button>
+                <button class="btn1 n_btn">Sing up</button>
             </div>
         </div>
     </section>
@@ -156,5 +191,8 @@
            </div>
         </div>
     </footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
