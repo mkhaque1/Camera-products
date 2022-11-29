@@ -146,7 +146,7 @@ header{
 }
 .searchbar:hover > .search_icon{
     background: white;
-    color: #e74c3c;
+    color: var(--primary);
 }
 .search_icon{
     height: 40px;
