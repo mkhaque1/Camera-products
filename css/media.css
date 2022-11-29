@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 425px) {
+@media  (max-width: 575.98px) {
     .main {
         padding: 0px 0px;
     }
@@ -84,4 +84,21 @@
     .news_text h4{
         font-size: 16px;
     }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .main .hero_left {
+        margin-top: 3px;
+    }
+}
+
+/*Extra Large devices (desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+   
+}
+
+/*Extra Extra large devices (large desktops, 1400px and up)*/
+@media (min-width: 1400px){
+
 }
