@@ -24,6 +24,7 @@ body{
 }
 .btn1{
     background-color: var(--btn);
+    color: var(--primary);
     border: none;
     border: 2px solid var(--btn);
     text-transform: uppercase;
