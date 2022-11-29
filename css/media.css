@@ -2,7 +2,16 @@
     .main {
         padding: 0px 0px;
     }
+    .nav-link{
+        text-align: center;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    .d-flex{
+        justify-content: center;
+    }
     .main .hero_left {
+        margin: 20px 0px;
         float: none;
         width: 100%;
         text-align: center;
